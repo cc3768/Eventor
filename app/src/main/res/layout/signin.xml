@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:textSize="35dp"
+        android:text="Sign In"
+        android:layout_weight="0.07" />
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="25dp"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="Username/Email" />
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="5dp"/>
+
+    <EditText
+        android:id="@+id/UserName"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="15dp"/>
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="Password" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="5dp"/>
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="5dp"/>
+    <Button
+        android:id="@+id/submitLogin"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:text="Submit" />
+</LinearLayout>
