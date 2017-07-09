@@ -18,7 +18,23 @@ public class MainActivity extends AppCompatActivity {
         mapView = (MapView) findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
     }
+    //-----------------All Button----------------------------
+    public void fsignin(){
+        setContentView(R.layout.signin);
+    }
+    public void fsignup(){
+        setContentView(R.layout.signup);
+    }
+    public void fsignup(){
+        setContentView(R.layout.signup);
+    }
+    public void fsignup(){
+        setContentView(R.layout.signup);
+    }
 
+
+
+    //-------------------Micro Button-------------------------
     @Override
     public void onStart() {
         super.onStart();
