@@ -1,3 +1,12 @@
+package com.example.ds121.eventor;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.example.ds121.eventor.R;
+import com.mapbox.mapboxsdk.Mapbox;
+import com.mapbox.mapboxsdk.maps.MapView;
+
 public class MainActivity extends AppCompatActivity {
     private MapView mapView;
 
@@ -5,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Mapbox.getInstance(this, "pk.eyJ1IjoiY2MzNzY4IiwiYSI6ImNqNHZ0ZDl6MDB6cHkycWswcnJjY3dpcHMifQ.Y2R7kGySeKCIxyE-_YCeLg");
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_layout);
         mapView = (MapView) findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
     }
