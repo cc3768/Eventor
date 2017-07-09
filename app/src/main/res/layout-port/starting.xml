@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#376dc6"
+    >
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="10dp"/>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_weight="0.25" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/Sign_In"
+        android:layout_width="220dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Sign In"
+        android:background="#29559e"/>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="15dp"/>
+
+    <Button
+        android:id="@+id/Sign_Up"
+        android:layout_width="220dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Sign Up"
+        android:background="#29559e"/>
+
+</LinearLayout>
