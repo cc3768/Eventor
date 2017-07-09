@@ -24,7 +24,7 @@
         android:layout_height="15dp"/>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/StreetAddress"
         android:layout_width="192dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -39,7 +39,7 @@
         android:layout_height="15dp"/>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/ZipCodeAddress"
         android:layout_width="192dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -54,7 +54,7 @@
         android:layout_height="15dp"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/SubmitAddress"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"

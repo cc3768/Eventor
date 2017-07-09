@@ -24,7 +24,7 @@
         android:layout_height="15dp"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/PaymentText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -33,7 +33,7 @@
         android:text="Will this event cost money?"
         android:textSize="19dp"/>
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/TogglePayment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -46,7 +46,7 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/SubmitTicket"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
