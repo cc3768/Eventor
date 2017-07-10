@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1" android:background="##efe8e8">
 
     <Space
         android:layout_width="1dp"
@@ -33,6 +33,11 @@
         android:inputType="textPersonName"
         android:text="First Name" />
 
+    <requestFocus
+        layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <Space
         android:layout_width="1dp"
         android:layout_height="15dp"/>
@@ -47,7 +52,6 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Last Name" />
-
 
     <Space
         android:layout_width="1dp"
@@ -173,7 +177,8 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Button"
+        android:onClick="FSUNextPage"/>
 
 
 </LinearLayout>

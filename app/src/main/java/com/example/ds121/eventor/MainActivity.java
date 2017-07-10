@@ -14,10 +14,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Mapbox.getInstance(this, "pk.eyJ1IjoiY2MzNzY4IiwiYSI6ImNqNHZ0ZDl6MDB6cHkycWswcnJjY3dpcHMifQ.Y2R7kGySeKCIxyE-_YCeLg");
+        Mapbox.getInstance(this, "pk.eyJ1IjoiY2MzNzY4IiwiYSI6ImNqNHZ0ZDl6MDB6cHkycWswcnJjY3dpcHMifQ.Y2R7kGySeKCIxyE-_YCeLg");
         //setContentView(R.layout.starting);
-        //mapView = (MapView) findViewById(R.id.mapView);
-        //mapView.onCreate(savedInstanceState);
+        mapView = (MapView) findViewById(R.id.mapView);
+        mapView.onCreate(savedInstanceState);
+    }
+
+    //functions
+    public map(){
+
     }
     //-----------------All Button----------------------------
     public void fsignin(View v){
@@ -26,9 +31,8 @@ public class MainActivity extends AppCompatActivity {
     public void fsignup(View v){
         setContentView(R.layout.signup);
     }
-
-
-
+    public void FSUNextPage(View v) {setContentView(R.layout.activity_layout);}
+    public void FSINextPage(View v) {setContentView(R.layout.activity_layout);}
     //-------------------Micro Button-------------------------
     @Override
     public void onStart() {
