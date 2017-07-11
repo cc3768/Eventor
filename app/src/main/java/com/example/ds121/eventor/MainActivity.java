@@ -14,21 +14,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    //    Mapbox.getInstance(this, "pk.eyJ1IjoiY2MzNzY4IiwiYSI6ImNqNHZ0ZDl6MDB6cHkycWswcnJjY3dpcHMifQ.Y2R7kGySeKCIxyE-_YCeLg");
-          setContentView(R.layout.starting);
-    //    mapView = (MapView) findViewById(R.id.mapView);
-     //   mapView.onCreate(savedInstanceState);
+        Mapbox.getInstance(this, "pk.eyJ1IjoiY2MzNzY4IiwiYSI6ImNqNHZ0ZDl6MDB6cHkycWswcnJjY3dpcHMifQ.Y2R7kGySeKCIxyE-_YCeLg");
+        mapView = (MapView) findViewById(R.id.mapView);
+        mapView.onCreate(savedInstanceState);
+        setContentView(R.layout.starting);
     }
 
     //functions
 
 
     //-----------------All Button----------------------------
-    public void fsignin(View v){
-        setContentView(R.layout.signin);
-    }
-    public void fsignup(View v){
-        setContentView(R.layout.signup);
+    public void FLogo(View v) {
+        setContentView(R.layout.activity_layout);
     }
     public void FSUNextPage(View v) {setContentView(R.layout.activity_layout);}
     public void FSINextPage(View v) {setContentView(R.layout.activity_layout);}
