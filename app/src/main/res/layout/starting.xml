@@ -14,20 +14,15 @@
 
     <Space
         android:layout_width="1dp"
-        android:layout_height="50dp"/>
-
-    <Space
-        android:layout_width="1dp"
-        android:layout_height="15dp"/>
-
+        android:layout_height="75dp"/>
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        app:srcCompat="@android:drawable/ic_delete"
         android:layout_centerInParent="true"
         android:layout_centerVertical="true"
         android:layout_gravity="center"
-        android:onClick="fmap"/>
+        android:onClick="fmap"
+        app:srcCompat="@android:drawable/ic_delete" />
 </LinearLayout>

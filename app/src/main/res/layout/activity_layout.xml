@@ -5,32 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <com.mapbox.mapboxsdk.maps.MapView
         android:id="@+id/mapView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="60"
         mapbox:mapbox_cameraTargetLat="40.73581"
         mapbox:mapbox_cameraTargetLng="-73.99155"
         mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10"
-        mapbox:mapbox_cameraZoom="15" />
-    <SlidingDrawer
-        android:id="@+id/drawer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        mapbox:mapbox_cameraZoom="15"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
 
-        android:handle="@+id/handle"
-        android:content="@+id/content">
+    </com.mapbox.mapboxsdk.maps.MapView>
 
-        <ImageView
-            android:id="@id/handle"
-            android:layout_width="88dip"
-            android:layout_height="44dip" />
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="7dp"
+        mapbox:srcCompat="@drawable/mapbox_info_bg_selector" />
 
-        <GridView
-            android:id="@id/content"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton2"
+        android:layout_centerHorizontal="true"
+        mapbox:srcCompat="@drawable/mapbox_info_bg_selector" />
 
-    </SlidingDrawer>
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_marginEnd="34dp"
+        mapbox:srcCompat="@drawable/mapbox_info_bg_selector" />
+
 
 </RelativeLayout>
