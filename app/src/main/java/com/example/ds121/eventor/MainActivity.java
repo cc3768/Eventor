@@ -1,5 +1,6 @@
 package com.example.ds121.eventor;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -14,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Mapbox.getInstance(this, "pk.eyJ1IjoiY2MzNzY4IiwiYSI6ImNqNHZ0ZDl6MDB6cHkycWswcnJjY3dpcHMifQ.Y2R7kGySeKCIxyE-_YCeLg");
-        mapView = (MapView) findViewById(R.id.mapView);
-        mapView.onCreate(savedInstanceState);
+        //Mapbox.getInstance(this, "pk.eyJ1IjoiY2MzNzY4IiwiYSI6ImNqNHZ0ZDl6MDB6cHkycWswcnJjY3dpcHMifQ.Y2R7kGySeKCIxyE-_YCeLg");
+        //mapView = (MapView) findViewById(R.id.mapView);
+        //mapView.onCreate(savedInstanceState);
         setContentView(R.layout.starting);
     }
 
@@ -29,11 +30,16 @@ public class MainActivity extends AppCompatActivity {
     }
     public void FSUNextPage(View v) {setContentView(R.layout.activity_layout);}
     public void FSINextPage(View v) {setContentView(R.layout.activity_layout);}
+    public void fmap(View v) {
+        Intent mapActivity = new Intent(this, MapActivity.class);   //create an intent to push bundle to another specified activity (MapActivity.class)
+        startActivity(mapActivity);                                 //Start activity included in the Intent mapActivity
+    }
+
     //-------------------Micro Button-------------------------
     @Override
     public void onStart() {
         super.onStart();
-        setContentView(R.layout.starting);
+        //setContentView(R.layout.starting);
         //mapView.onStart();
     }
 
