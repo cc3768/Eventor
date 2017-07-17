@@ -24,6 +24,32 @@ public class MainActivity extends AppCompatActivity {
                                                                                 // automatically open the setcontentview to activity_layout
     public void FSINextPage(View v) {setContentView(R.layout.activity_layout);} // ^ same as above ^
 
+    public void fSignin(View v){}
+
+    public void fpost(View v){
+        if (Account.acc.AccSI == "Correctly"  && Account.acc.AccSB == "Active"){
+            setContentView(R.layout.new_listing);
+        }
+        else if(Account.acc.AccSI == "Deny") {
+            setContentView(R.layout.signin);
+        }
+        else if(Account.acc.AccSB == "InActive" && Account.acc.AccSI == "Correctly") {
+            setContentView(R.layout.sub);
+        }
+    }
+
+    public void fSignup(View v){setContentView(R.layout.signin);}
+
+    public void fsub(View v){
+        if (Account.acc.AccSI == "Correctly"){
+            setContentView(R.layout.new_listing);
+        }
+        else {
+            setContentView(R.layout.signin);
+        }
+    }
+    }
+
     public void fmap(View v) /* Use this as an example of calling an activity and passing savedInstanceState  */{
         Intent mapActivity = new Intent(this, MapActivity.class);   //create an intent to push bundle to another specified activity (MapActivity.class)
                                                                     //Shares all bundles with specified activity call.
